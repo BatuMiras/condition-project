@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript / Koşul Yapısı</title>
+</head>
+<body>
+   
+   <h1 id="header">Javascript Koşul Yapısı</h1>
+   
+   <p>Aşağıda ki kutucuğa adınızı giriniz.</p>
+   
+   Adınız : <input type="text" id="nameInfo">
+   
+   <button type="button" onclick="myFunction()">Tamam</button>
+   
+   <p id="info"></p>
+   
+   <script>
+    
+         function myFunction() {
+    let name = document.getElementById ("nameInfo").value ;
+    
+    let text;
+    if (isNaN(name)) {
+        text = "Teşekkürler :)";
+    }
+    else {
+        text = "Rakam Girilemez.";
+    }
+    document.getElementById ("info").innerHTML = text;
+} 
+
+    
+    </script>
+   
+   
+   <!--<script src="kosul.js" type="text/javascript"></script>
+
+    
+</body>
+</html>
